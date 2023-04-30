@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="SlideShow.css">
+        <title>サンプル</title>
+    </head>
+    <body>
+        <script src="Sample2.js" charset="UTF-8"></script>
+        <div id="slideShow">
+            <img id="bigimage" src="pic0.jpg">
+        </div>
+        <div id="navigation">
+            <input type="button" value="●" onclick="start()">
+            <input type="button" value="■" onclick="stop()">
+        </div>
+        <div id="thumbnail">
+            <script>
+                for(var i = 0; i < 3; i++){
+                    document.writeln('<img class="smallimage" src="pic' + i + '.jpg">');
+                }
+            </script>
+        </div>
+    </body>
+</html>
